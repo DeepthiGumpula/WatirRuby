@@ -1,0 +1,194 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Launch browser and hit seleniumframework.com",
+    "line": 1,
+    "description": "",
+    "id": "launch-browser-and-hit-seleniumframework.com",
+    "uri": "features/first_selenium.feature",
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "name": "Open seleniumframework website and print title, url and page source",
+        "line": 3,
+        "description": "",
+        "id": "launch-browser-and-hit-seleniumframework.com;open-seleniumframework-website-and-print-title,-url-and-page-source",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I open seleniumframework website",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/waits.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6768372000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I print title, url and page source",
+            "line": 5,
+            "output": [
+              "Page Title : Selenium Framework | Practiceform"
+            ],
+            "match": {
+              "location": "features/step_definitions/steps.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2696292000
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "name": "Print the browser name",
+        "line": 7,
+        "description": "",
+        "id": "launch-browser-and-hit-seleniumframework.com;print-the-browser-name",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I open seleniumframework website",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/waits.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5933218000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I print the browser name",
+            "line": 9,
+            "output": [
+              "Browser name: firefox"
+            ],
+            "match": {
+              "location": "features/step_definitions/browser_command.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1299000
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "name": "Print the ready state",
+        "line": 11,
+        "description": "",
+        "id": "launch-browser-and-hit-seleniumframework.com;print-the-ready-state",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I open seleniumframework website",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/waits.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7583935000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I print the browser ready state",
+            "line": 13,
+            "output": [
+              "Browser ready state: complete"
+            ],
+            "match": {
+              "location": "features/step_definitions/browser_command.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 764376000
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "name": "Browser back, forward and refresh",
+        "line": 15,
+        "description": "",
+        "id": "launch-browser-and-hit-seleniumframework.com;browser-back,-forward-and-refresh",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I open seleniumframework website",
+            "line": 16,
+            "match": {
+              "location": "features/step_definitions/waits.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6826891000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I click ABOUT link",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/browser_command.rb:14"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Element is not currently visible and so may not be interacted with (Selenium::WebDriver::Error::ElementNotVisibleError)\n[remote server] file:///var/folders/w6/gyd9l3x97bv20z_2p6z0spn40000gn/T/webdriver-profile20160421-7836-1480nem/extensions/fxdriver@googlecode.com/components/command-processor.js:10092:in `fxdriver.preconditions.visible'\n[remote server] file:///var/folders/w6/gyd9l3x97bv20z_2p6z0spn40000gn/T/webdriver-profile20160421-7836-1480nem/extensions/fxdriver@googlecode.com/components/command-processor.js:12644:in `DelayedCommand.prototype.checkPreconditions_'\n[remote server] file:///var/folders/w6/gyd9l3x97bv20z_2p6z0spn40000gn/T/webdriver-profile20160421-7836-1480nem/extensions/fxdriver@googlecode.com/components/command-processor.js:12661:in `DelayedCommand.prototype.executeInternal_/h'\n[remote server] file:///var/folders/w6/gyd9l3x97bv20z_2p6z0spn40000gn/T/webdriver-profile20160421-7836-1480nem/extensions/fxdriver@googlecode.com/components/command-processor.js:12666:in `DelayedCommand.prototype.executeInternal_'\n[remote server] file:///var/folders/w6/gyd9l3x97bv20z_2p6z0spn40000gn/T/webdriver-profile20160421-7836-1480nem/extensions/fxdriver@googlecode.com/components/command-processor.js:12608:in `DelayedCommand.prototype.execute/<'\nfeatures/first_selenium.feature:17:in `And I click ABOUT link'",
+              "duration": 4917541000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I click back on the browser",
+            "line": 18,
+            "match": {
+              "location": "features/step_definitions/browser_command.rb:18"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 1155000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I click forward on the browser",
+            "line": 19,
+            "match": {
+              "location": "features/step_definitions/browser_command.rb:23"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 990999
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I click refresh on the browser",
+            "line": 20,
+            "match": {
+              "location": "features/step_definitions/browser_command.rb:28"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 971000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

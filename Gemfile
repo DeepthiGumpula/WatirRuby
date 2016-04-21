@@ -7,6 +7,7 @@ gem 'watir-webdriver'
 gem 'faker'
 gem 'clipboard'
 gem 'rake'
+gem 'bundler'
 gem 'rubyXL'
 gem 'rubyzip'
 # gem to connect to saucelabs and also dynamically change browser parameters

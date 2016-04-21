@@ -1,0 +1,1 @@
+default: --no-source ARCHIVE_RESULTS=yes --color --format pretty --format html --out results.html

@@ -1,0 +1,389 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>features/step_definitions/waits.rb</title>
+    <link href="./assets/0.2.3/screen.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="./assets/0.2.3/print.css" media="print" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <script type="text/javascript" src="./assets/0.2.3/rcov.js"></script>
+  </head>
+  <body>
+    <h1>Latest C0 Coverage Information - Simploco - RCov</h1>
+    <h2>features/step_definitions/waits.rb</h2>
+
+    <div class="report_table_wrapper">
+      <table class='report' id='report_table'>
+        <thead>
+          <tr>
+            <th class="left_align">Name</th>
+            <th class="right_align">Total Lines</th>
+            <th class="right_align">Lines of Code</th>
+            <th class="left_align">Total Coverage</th>
+            <th class="left_align">Code Coverage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="left_align"><a href="features-step_definitions-waits_rb.html">features/step_definitions/waits.rb</a></td>
+            <td class='right_align'><tt>110</tt></td>
+            <td class='right_align'><tt>65</tt></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>59.09%</tt></div>
+      <div class="percent_graph">
+        <div class="covered" style="width:59px"></div>
+        <div class="uncovered" style="width:41px"></div>
+      </div></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>30.77%</tt></div>
+      <div class="percent_graph">
+        <div class="covered" style="width:31px"></div>
+        <div class="uncovered" style="width:69px"></div>
+      </div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Key</h3>
+
+    <div class="key"><pre><span class='marked'>Code reported as executed by Ruby looks like this...</span><span class='marked1'>and this: this line is also marked as covered.</span><span class='inferred'>Lines considered as run by rcov, but not reported by Ruby, look like this,</span><span class='inferred1'>and this: these lines were inferred by rcov (using simple heuristics).</span><span class='uncovered'>Finally, here's a line marked as not executed.</span></pre></div>
+
+    <h3>Coverage Details</h3>
+
+    <table class="details">
+      <tbody>
+        <tr class="marked">
+          <td><pre><a name="line2">2</a> And(/^I set pageload timeout$/) do</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line3">3</a>   @browser.driver.manage.timeouts.page_load =0</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line4">4</a> end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line5">5</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line6">6</a> And(/^I set script timeout$/) do</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line7">7</a>   @browser.driver.manage.timeouts.script_timeout = 1</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line8">8</a>   puts @browser.execute_script(&quot;return jQuery.active&quot;)</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line9">9</a> end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line10">10</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line11">11</a> And(/^I set implicit timeout$/) do</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line12">12</a>   # Set implicit timeout to 1 second and observe that it fails</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line13">13</a>   # Implicit timeout applies to all elements on page.</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line14">14</a>   @browser.driver.manage.timeouts.implicit_wait=2</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line15">15</a> end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line16">16</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line17">17</a> Then(/^I print the text for target element$/) do</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line18">18</a>   period_element = @browser.link(id:&quot;periodicElement&quot;)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line19">19</a>   puts &quot;Period element text --&gt; #{period_element.text}&quot;</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line20">20</a> end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line21">21</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line22">22</a> When(/^I open seleniumframework website$/) do</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line23">23</a>   @browser.goto &quot;http://www.seleniumframework.com/Practiceform/&quot;</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line24">24</a> end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line25">25</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line26">26</a> And(/^I click open new browser window$/) do</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line27">27</a>   puts &quot;Before opening new window title --&amp;gt; #{@browser.title}&quot;</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line28">28</a>   @browser.button(id: &quot;button1&quot;).click</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line29">29</a> </pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line30">30</a>   all_windows = @browser.windows</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line31">31</a>   puts &quot;All window handles array after clicking new browser window --&amp;gt; #{all_windows}&quot;</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line32">32</a>   all_windows.each do |window|</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line33">33</a>     puts window.title</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line34">34</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line35">35</a> end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line36">36</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line37">37</a> Then(/^I switch to new window$/) do</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line38">38</a>   puts &quot;Switching to new window....&quot;</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line39">39</a>   @browser.window(title: &quot;Selenium Framework | Selenium, Cucumber, Ruby, Java et al.&quot;).use</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line40">40</a>   puts &quot;Printing new window url --&amp;gt; #{@browser.url}&quot;</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line41">41</a> end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line42">42</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line43">43</a> And(/^back to parent window$/) do</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line44">44</a>   @browser.window(title: &quot;Selenium Framework | Practiceform&quot;).use</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line45">45</a>   puts &quot;Parent window url --&amp;gt; #{@browser.url}&quot;</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line46">46</a> end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line47">47</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line48">48</a> And(/^I click javascript alert window$/) do</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line49">49</a>   @browser.element(id: &quot;alert&quot;).click</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line50">50</a> end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line51">51</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line52">52</a> Then(/^I print the text in javascript alert$/) do</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line53">53</a>   if @browser.alert.exists?</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line54">54</a>     alert = @browser.alert</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line55">55</a>     puts &quot;Alert text --&amp;gt; #{alert.text}&quot;</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line56">56</a>     puts &quot;Clicking ok on alert...&quot;</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line57">57</a>     alert.ok</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line58">58</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line59">59</a> end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line60">60</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line61">61</a> And(/^I click new browser tab$/) do</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line62">62</a>   #Without maximize, the view port sometimes is too short and driver is not able to click on the button</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line63">63</a>   @browser.window.maximize</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line64">64</a>   new_browser_tab = @browser.buttons.find {|button| button.text == &quot;New Browser Tab&quot;}</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line65">65</a>   new_browser_tab.click</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line66">66</a> end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line67">67</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line68">68</a> Then(/^I switch to new tab$/) do</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line69">69</a>   all_windows = @browser.windows</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line70">70</a>   all_windows.each do |window|</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line71">71</a>     puts window.title</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line72">72</a>   end</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line73">73</a>   @browser.window(title: &quot;Selenium Framework | Selenium, Cucumber, Ruby, Java et al.&quot;).use</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line74">74</a>   puts &quot;Printing url of newly opened tab --&amp;gt; #{@browser.url}&quot;</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line75">75</a> end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line76">76</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line77">77</a> And(/^back to main window$/) do</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line78">78</a>   @browser.window(title: &quot;Selenium Framework | Practiceform&quot;).use</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line79">79</a>   puts &quot;After switching back to parent window , printing url --&amp;gt; #{@browser.url}&quot;</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line80">80</a> end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line81">81</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line82">82</a> And(/^I click new message window button$/) do</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line83">83</a>   @browser.window.maximize</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line84">84</a>   puts &quot;Parent window handle --&amp;gt; #{@browser.driver.window_handles}&quot;</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line85">85</a>   @parent_window_handle = @browser.driver.window_handles[0]</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line86">86</a>   new_message_window = @browser.buttons.find {|button| button.text == &quot;New Message Window&quot;}</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line87">87</a>   new_message_window.click</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line88">88</a> end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line89">89</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line90">90</a> Then(/^I print text for message window$/) do</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line91">91</a>   # Since message window doesn&#39;t have title or url to differentiate it, we are not able to use @browser.windows appoach</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line92">92</a>   # either we have to use index or use another approach as below</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line93">93</a>   all_windows = @browser.driver.window_handles</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line94">94</a> </pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line95">95</a>   all_windows.each do |window|</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line96">96</a>     puts window</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line97">97</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line98">98</a> </pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line99">99</a>   @browser.driver.switch_to.window(all_windows.last)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line100">100</a>   puts &quot;Message window text --&amp;gt; #{@browser.text}&quot;</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line101">101</a> end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line102">102</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line103">103</a> When(/^I open yourhtmlsource website$/) do</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line104">104</a>   @browser.goto &quot;http://yourhtmlsource.com/frames/inlineframes.html&quot;</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line105">105</a> end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line106">106</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line107">107</a> Then(/^I switch to frame and print its text$/) do</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line108">108</a>   frame = @browser.iframe(name: &quot;bomb&quot;)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line109">109</a>   frame_body = frame.element(tag_name: &quot;body&quot;)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line110">110</a>   puts frame_body.text</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line111">111</a> end</pre></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Generated on 2016-04-22 03:49:00 +0100 with <a href="https://github.com/fguillen/simplecov-rcov">SimpleCov-RCov 0.2.3</a></p>
+
+  </body>
+</html>

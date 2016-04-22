@@ -10,6 +10,8 @@ gem 'rake'
 gem 'bundler'
 gem 'rubyXL'
 gem 'rubyzip'
+gem 'simplecov-rcov'
+gem 'simplecov'
 # gem to connect to saucelabs and also dynamically change browser parameters
 gem 'saucelabs'
 gem 'nokogiri'

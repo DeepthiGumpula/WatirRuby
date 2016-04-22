@@ -14,6 +14,7 @@ gem 'headless'
 # gem to connect to saucelabs and also dynamically change browser parameters
 gem 'saucelabs'
 gem 'nokogiri'
+gem 'parallel_tests'
 
 
 

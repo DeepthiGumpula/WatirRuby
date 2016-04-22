@@ -23,9 +23,8 @@
               "location": "features/step_definitions/waits.rb:21"
             },
             "result": {
-              "status": "failed",
-              "error_message": "Net::ReadTimeout (Net::ReadTimeout)\nfeatures/Waits.feature:4:in `When I open seleniumframework website'",
-              "duration": 60006536000
+              "status": "passed",
+              "duration": 7542179000
             }
           },
           {
@@ -36,8 +35,8 @@
               "location": "features/step_definitions/waits.rb:1"
             },
             "result": {
-              "status": "skipped",
-              "duration": 985999
+              "status": "passed",
+              "duration": 3976000
             }
           }
         ]
@@ -59,7 +58,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 35867176000
+              "duration": 5692622000
             }
           },
           {
@@ -71,7 +70,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3266582000
+              "duration": 4090000
             }
           }
         ]

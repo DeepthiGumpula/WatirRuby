@@ -1,11 +1,5 @@
 
 
-Before do
-
-  @browser = Watir::Browser.new :firefox
-
-end
-
 After do |scenario|
   if scenario.failed?
     @browser.screenshot.save (scenario.name+".png")
@@ -33,6 +27,11 @@ end
 
 After do
   @browser.quit
+end
+
+Before do
+  ENV['BROWSER'] = "chrome" if ENV['BROWSER'].nil?
+  @browser = Watir::Browser.new ENV['BROWSER'].to_sym
 end
 
 

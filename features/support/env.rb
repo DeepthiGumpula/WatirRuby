@@ -13,14 +13,13 @@ require 'nokogiri'
 require 'open-uri'
 require 'zip'
 require 'rubyXL'
-require 'simplecov'
-require 'simplecov-rcov'
 
-SimpleCov.formatters = [
-    SimpleCov::Formatter::HTMLFormatter,
-    SimpleCov::Formatter::RcovFormatter
-]
-
-SimpleCov.start
-
+if ENV['HEADLESS']
+  require 'headless'
+  headless = Headless.new
+  headless.start
+  at_exit do
+    headless.destroy
+  end
+end
 

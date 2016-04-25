@@ -1,12 +1,4 @@
 
-
-After do |scenario|
-  if scenario.failed?
-    @browser.screenshot.save (scenario.name+".png")
-    embed(scenario.name+".png", 'image/png')
-  end
-  @browser.quit
-end
 at_exit do
   ENV['ARCHIVE_RESULTS'] = 'no' if ENV['ARCHIVE_RESULTS'].nil?
   if ENV['ARCHIVE_RESULTS']=="yes"
@@ -30,7 +22,7 @@ After do
 end
 
 Before do
-  ENV['BROWSER'] = "chrome" if ENV['BROWSER'].nil?
+  ENV['BROWSER'] = "firefox" if ENV['BROWSER'].nil?
   @browser = Watir::Browser.new ENV['BROWSER'].to_sym
 end
 
